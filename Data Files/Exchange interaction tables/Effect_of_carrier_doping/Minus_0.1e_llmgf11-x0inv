@@ -1,0 +1,213 @@
+ ----------------- LMGF - ref: bebeec33 ------------------
+
+ LMGF:     nbas = 8  nspec = 4  verb 35
+ special:  forces,  display J
+ pot:      spin-pol
+ libxc:    GGA X (Perdew, Burke & Ernzerhof SOL) + GGA C (Perdew, Burke & Ernzerhof SOL)
+ asa:      no-ccor, two-c-H
+ bz:       metal(5), tetra 
+
+                Plat                                  Qlat
+  -0.500000   0.500000   0.988535       -1.000000   0.000000   0.505799
+   0.500000  -0.500000   0.988535        0.000000  -1.000000   0.505799
+   0.500000   0.500000   0.988535        1.000000   1.000000   0.000000
+   alat = 10.304219  Cell vol = 1081.526890
+
+ LATTC:  as= 2.000   tol=1.00e-16   alat=10.30422   awald= 0.195   lmax=6
+         r1=  3.699   nkd= 223      q1=  4.525   nkg= 405
+
+ SGROUP: 1 symmetry operations from 0 generators
+ SYMLAT: Bravais system is tetragonal with 16 symmetry operations.
+ SYMCRY: crystal invariant under 4 symmetry operations for tol=1e-5
+ GROUPG: the following are sufficient to generate the space group:
+         i*r4z
+ MKSYM:  found 4 space group operations; adding inversion generated 8 ops
+
+ SPLCLS:  4 species split into 5 classes
+ Species  Class      Sites...
+ Ge       3:Ge       3
+          5:Ge2      4
+ BZMESH: 21 irreducible QP from 125 ( 5 5 5 )  shift= F F F
+
+ EXASA: print properties calculated from J
+
+ Makidx:  hamiltonian dimensions Low, Int, High, Negl: 128 0 0 0
+ SUHAM : 2nd generation ASA; potential functions P3
+  
+ ZMESH: nz=10 (real axis: Im(z)=0)  e1,e2=0,0  wz=0
+ Class   dq     amom      Class   dq     amom      Class   dq     amom
+   1   0.0000  3.1020  |    3   0.0000  0.0000  |    5   0.0000  0.0000
+   2   0.0000 -3.1020  |    4   0.0000  0.0000  |
+
+ ... Display properties of Jij (GF mode 11):  rcut = -5*alat
+ baslst:  1 2
+ ... writing real-space Jij
+ exasa: located (1,1) pair in file jr
+
+ pvgfe7: read J(rs), returning J(rs), ib=1, jb=1
+
+ Sum J_ij=-0.596182  J_00=-0.595645  J_0=-0.000537 for ib=1, jb=1
+
+ srvsym:  71 vectors in 19 stars.  tau = 0.000 0.000 0.000
+
+   Star   nstar    |R|          -- R(jb)-R(ib) --        J(mRy)   sum J
+    1       1    0.000000    0.000    0.000    0.000  -595.64511    0.000
+    2       4    1.000000    1.000    0.000    0.000     0.00677    0.027
+    3       4    1.215402    0.500   -0.500    0.989     0.00274    0.038
+    4       4    1.215402    0.500   -0.500   -0.989     0.00274    0.049
+    5       4    1.414214   -1.000    1.000    0.000    -0.02576   -0.054
+    6       4    1.864726    1.500    0.500   -0.989    -0.02441   -0.152
+    7       4    1.864726    0.500    1.500   -0.989    -0.00453   -0.170
+    8       4    1.864726    0.500   -1.500   -0.989    -0.02441   -0.267
+    9       4    1.864726    0.500    1.500    0.989    -0.00453   -0.286
+   10       2    1.977070    0.000    0.000   -1.977    -0.00891   -0.303
+   11       4    2.000000    0.000    2.000    0.000     0.00876   -0.268
+   12       4    2.215582   -1.000    0.000   -1.977     0.00065   -0.266
+   13       4    2.215582    0.000   -1.000   -1.977     0.00065   -0.263
+   14       4    2.236068   -1.000    2.000    0.000     0.00666   -0.236
+   15       4    2.236068    2.000   -1.000    0.000    -0.02815   -0.349
+   16       4    2.340342    1.500   -1.500   -0.989     0.00015   -0.349
+   17       4    2.340342    1.500    1.500   -0.989     0.00015   -0.348
+   18       4    2.430804    1.000   -1.000    1.977     0.00974   -0.309
+   19       4    2.430804    1.000   -1.000   -1.977     0.00974   -0.270
+
+ pvgfe7: read J(rs), returning J(rs), ib=1, jb=2
+
+ Sum J_ij=-0.004300  J_00= 0.000000  J_0=-0.004300 for ib=1, jb=2
+
+ srvsym:  48 vectors in 12 stars.  tau = 0.000 -0.500 0.494
+
+   Star   nstar    |R|          -- R(jb)-R(ib) --        J(mRy)   sum J
+    1       4    0.703065    0.000   -0.500    0.494    -1.01415   -4.057
+    2       4    1.222416   -1.000    0.500    0.494    -0.02277   -4.148
+    3       4    1.222416    1.000    0.500    0.494    -0.02277   -4.239
+    4       4    1.564833    0.500    0.000    1.483    -0.00057   -4.241
+    5       4    1.579335   -1.500    0.000   -0.494    -0.00255   -4.251
+    6       4    1.857068    0.500   -1.000    1.483    -0.00235   -4.261
+    7       4    1.857068   -1.000    0.500   -1.483    -0.00239   -4.270
+    8       4    1.869305   -1.000    1.500    0.494     0.00142   -4.265
+    9       4    1.869305   -1.500    1.000   -0.494     0.00144   -4.259
+   10       4    2.109195    0.000    1.500   -1.483    -0.01486   -4.318
+   11       4    2.119977    0.500   -2.000   -0.494     0.00172   -4.311
+   12       4    2.119977    0.500    2.000   -0.494     0.00170   -4.305
+
+ pvgfe7: read J(rs), returning J(rs), ib=2, jb=1
+
+ Sum J_ij=-0.004300  J_00= 0.000000  J_0=-0.004300 for ib=2, jb=1
+
+ srvsym:  48 vectors in 12 stars.  tau = 0.000 0.500 -0.494
+
+   Star   nstar    |R|          -- R(jb)-R(ib) --        J(mRy)   sum J
+    1       4    0.703065   -0.500    0.000    0.494    -1.01415   -4.057
+    2       4    1.222416   -1.000    0.500   -0.494    -0.02277   -4.148
+    3       4    1.222416    0.500   -1.000    0.494    -0.02277   -4.239
+    4       4    1.564833   -0.500    0.000   -1.483    -0.00057   -4.241
+    5       4    1.579335    1.500    0.000    0.494    -0.00255   -4.251
+    6       4    1.857068   -0.500    1.000   -1.483    -0.00235   -4.261
+    7       4    1.857068    0.500    1.000   -1.483    -0.00239   -4.270
+    8       4    1.869305   -1.000    1.500   -0.494     0.00142   -4.265
+    9       4    1.869305   -1.000   -1.500   -0.494     0.00144   -4.259
+   10       4    2.109195    1.500    0.000   -1.483    -0.01486   -4.318
+   11       4    2.119977   -2.000    0.500   -0.494     0.00170   -4.311
+   12       4    2.119977   -0.500    2.000    0.494     0.00172   -4.305
+
+ pvgfe7: read J(rs), returning J(rs), ib=2, jb=2
+
+ Sum J_ij=-0.596465  J_00=-0.595934  J_0=-0.000531 for ib=2, jb=2
+
+ srvsym:  71 vectors in 19 stars.  tau = 0.000 0.000 0.000
+
+   Star   nstar    |R|          -- R(jb)-R(ib) --        J(mRy)   sum J
+    1       1    0.000000    0.000    0.000    0.000  -595.93395    0.000
+    2       4    1.000000    1.000    0.000    0.000     0.00432    0.017
+    3       4    1.215402    0.500   -0.500    0.989     0.00198    0.025
+    4       4    1.215402    0.500   -0.500   -0.989     0.00198    0.033
+    5       4    1.414214   -1.000    1.000    0.000    -0.02466   -0.066
+    6       4    1.864726    1.500    0.500   -0.989    -0.00446   -0.083
+    7       4    1.864726    0.500    1.500   -0.989    -0.02445   -0.181
+    8       4    1.864726    0.500   -1.500   -0.989    -0.00446   -0.199
+    9       4    1.864726    0.500    1.500    0.989    -0.02445   -0.297
+   10       2    1.977070    0.000    0.000   -1.977    -0.01020   -0.317
+   11       4    2.000000    0.000    2.000    0.000     0.00780   -0.286
+   12       4    2.215582   -1.000    0.000   -1.977     0.00020   -0.285
+   13       4    2.215582    0.000   -1.000   -1.977     0.00020   -0.285
+   14       4    2.236068   -1.000    2.000    0.000    -0.02694   -0.392
+   15       4    2.236068    2.000   -1.000    0.000     0.00746   -0.362
+   16       4    2.340342    1.500   -1.500   -0.989     0.00139   -0.357
+   17       4    2.340342    1.500    1.500   -0.989     0.00139   -0.351
+   18       4    2.430804    1.000   -1.000    1.977     0.00889   -0.316
+   19       4    2.430804    1.000   -1.000   -1.977     0.00889   -0.280
+
+ Sum J_ij for all pairs connected to listed sites (mRy)
+ site       Sum J_ij       J_00    J_0(r<rcut)      J_0    2/3 J_0 (K)
+   1        -600.482    -595.645      -4.575      -4.837    -508.9
+   2        -600.765    -595.934      -4.585      -4.831    -508.3
+ -------
+ avg        -600.623    -595.790      -4.580      -4.834    -508.6 ( -481.9 r<rcut)
+
+ ... Mean-field estimate:  Tc = 34.146 meV =  396.3 K
+ Site  ez        Site  ez
+   1   0.7069 |    2  -0.7074 |
+
+ pvgfeo:  Symmetrize J(q) ... max deviation = 0
+
+ ... generalized Tyablikov estimate for Tc, 2 site(s)
+ mixing: mode=B  nmix=2  beta=.3  kill=7  betv=0
+... iter 1 : RMS deviation in Tc = 0.005 meV   avg = 1.777 meV
+... iter 2 : RMS deviation in Tc = 0.005 meV   avg = 1.788 meV
+... iter 3 : RMS deviation in Tc = 0.006 meV   avg = 1.802 meV
+... iter 4 : RMS deviation in Tc = 0.007 meV   avg = 1.823 meV
+... iter 5 : RMS deviation in Tc = 0.007 meV   avg = 1.855 meV
+... iter 6 : RMS deviation in Tc = 0.002 meV   avg = 1.880 meV
+... iter 7 : RMS deviation in Tc = 0.001 meV   avg = 2.025 meV
+... iter 8 : RMS deviation in Tc = 0.000 meV   avg = 2.101 meV
+... iter 9 : RMS deviation in Tc = 0.000 meV   avg = 2.110 meV
+... iter 10 : RMS deviation in Tc = 0.000 meV   avg = 2.121 meV
+... iter 11 : RMS deviation in Tc = 0.000 meV   avg = 2.121 meV
+... iter 12 : RMS deviation in Tc = 0.000 meV   avg = 2.118 meV
+... iter 13 : RMS deviation in Tc = 0.000 meV   avg = 2.118 meV
+... iter 14 : RMS deviation in Tc = 0.000 meV   avg = 2.118 meV
+... iter 15 : RMS deviation in Tc = 0.000 meV   avg = 2.116 meV
+... iter 16 : RMS deviation in Tc = 0.000 meV   avg = 2.114 meV
+... iter 17 : RMS deviation in Tc = 0.000 meV   avg = 2.109 meV
+... iter 18 : RMS deviation in Tc = 0.000 meV   avg = 2.108 meV
+... iter 19 : RMS deviation in Tc = 0.000 meV   avg = 2.107 meV
+... iter 20 : RMS deviation in Tc = 0.000 meV   avg = 2.107 meV
+... iter 21 : RMS deviation in Tc = 0.000 meV   avg = 2.106 meV
+... iter 22 : RMS deviation in Tc = 0.000 meV   avg = 2.106 meV
+... iter 23 : RMS deviation in Tc = 0.000 meV   avg = 2.106 meV
+... iter 24 : RMS deviation in Tc = 0.000 meV   avg = 2.106 meV
+... iter 25 : RMS deviation in Tc = 0.000 meV   avg = 2.106 meV
+... iter 26 : RMS deviation in Tc = 0.000 meV   avg = 2.106 meV
+... iter 27 : RMS deviation in Tc = 0.000 meV   avg = 2.107 meV
+... iter 28 : RMS deviation in Tc = 0.000 meV   avg = 2.107 meV
+ ... RPA Tc converged in 29 iter:  Tc = 2.108 meV =  24.5 K
+ Site  ez        Site  ez
+   1   0.6958 |    2  -0.7183 |
+
+ pvgfe8:  Make w(q) from J(q)
+ pvgfe8:  antiferromagnetic case ...
+
+ ... Stiffness from lim(lambda->0) FT 1/6 T**2 omega(T) exp(-lambda T)
+    lambda    om(lambda,0)  om(lambda,0)  ln(om)
+              Ry-alat**2    meV-A**2     (file sstiff)
+  10.304219    0.000001      0.002       -6.0702
+   9.273797    0.000002      0.007       -4.9781
+   8.243375    0.000005      0.021       -3.8739
+   7.212953    0.000017      0.064       -2.7552
+   6.182532    0.000052      0.198       -1.6188
+   5.152110    0.000166      0.632       -0.4590
+   4.121688    0.000548      2.086        0.7352
+   3.091266    0.001915      7.287        1.9860
+   2.060844    0.007378     28.079        3.3350
+   1.030422    0.033392    127.083        4.8448
+   0.000000    0.187588    713.929        6.5708
+
+ ... generating J on a doubled mesh
+
+ CHGMSH: remake f (5 * 5 * 5)  to f (10 * 10 * 10),  opt=13
+
+ ... Make w(q) along lines in syml file (mRy)
+ ... no syml file ... skipping SW spectra
+ Exit 0 LMGF
+ CPU time:  1.290s   Wall clock 1.309s  at  13:50:40 01.07.2024  on
